@@ -404,6 +404,27 @@ body {
   outline: none;
 }
 
+/* ====================КАСТОМНЫЙ ЧЕКБОКС================== */
+.modal-form-checkbox-policy::before {
+  display: block;
+  content: '';
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+}
+
+.modal-form-checkbox:checked + .modal-form-checkbox-policy::before {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: ;
+  background-size: contain;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2px;
+  transition: background-color 250ms var(--cubic);
+}
+
 /* ==========================КНОПКА ОТПРАВИТЬ==================================== */
 .modal-form-btn {
   display: flex;
