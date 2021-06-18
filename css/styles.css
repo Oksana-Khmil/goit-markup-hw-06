@@ -671,7 +671,7 @@ body {
 }
 
 .client-link:hover .icon-client,
-.contact-link:focus .icon-client {
+.client-link:focus .icon-client {
   fill: var(--accent-color);
 }
 .icon-client {
