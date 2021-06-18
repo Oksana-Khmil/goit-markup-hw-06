@@ -379,12 +379,34 @@
                     </svg>
                 </a>
             </li>
-
           </ul>
-
       </div>
+    <form class="subscription-form">
+        <label class="subscription-field" for="subscription-email">Подпишитесь на рассылку</label>
+        <span class="subscription-input">
+            <input class="subscription-input-field" id="subscription-email" name="user-email" type="email" placeholder="E-mail"
+                required />
+            <button class="subscription-submit-button" type="submit">
+                Подписаться
+                <svg class="subscribe-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+            </button>
+        </span>
+    </form>
     </div>
     </footer>
+
+
+
+
+
+
+
+
+
+
+
 <!-- <МОДАЛЬНОЕ ОКНО> -->
 <div class="backdrop is-hidden" data-modal>
 <div class="modal">
@@ -397,14 +419,15 @@
 </button>
 
 <!-- <ФОРМА ДЛЯ ЗАПОЛНЕНИЯ> -->
+
 <form action="#" class="modal-form">
     <p class="modal-form-head">Оставьте свои данные, мы вам перезвоним</p>
-    <label class="modal-form-field">
+       <label class="modal-form-field">
         Имя 
         <span class="modal-forma-input-wrapper">
         <input type="text" name="user-name" class="modal-forma-input" minlength="2" placeholder="Oksana" required>
         <svg class="modal-form-icon" width="18px" height="18px">
-            <use href="./images/icons.svg#icon-facebook"></use>
+            <use href="./images/icons.svg#icon-person"></use>
         </svg>
         </span>
     </label>
@@ -413,7 +436,7 @@
         <span class="modal-forma-input-wrapper">
         <input type="tel" name="user-phone" class="modal-forma-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="099-111-11-11" placeholder="096-111-11-11" required>
         <svg class="modal-form-icon" width="18px" height="18px">
-            <use href="./images/icons.svg#icon-facebook"></use>
+            <use href="./images/icons.svg#icon-phone"></use>
         </svg>
         </span>
     </label>
@@ -422,7 +445,7 @@
         <span class="modal-forma-input-wrapper">
         <input type="email" name="user-email" class="modal-forma-input" placeholder="info@devstudio.com" required>
         <svg class="modal-form-icon" width="18px" height="18px">
-            <use href="./images/icons.svg#icon-facebook"></use>
+            <use href="./images/icons.svg#icon-email"></use>
         </svg>
         </span>
     </label>
@@ -430,16 +453,13 @@
         Комментарий
         <textarea name="user-message" class="modal-form-comment" placeholder="Введите текст"></textarea>
     </label>
-    
-    
-    
-    
-    <!-- <ЧЕКБОКС> -->
 
+       <!-- <ЧЕКБОКС> -->
+<input type="checkbox" name="user-policy" class="modal-form-checkbox visually-hidden" id="checkbox-policy" required>
+<label for="checkbox-policy" class="modal-form-checkbox-policy">Соглашаюсь с рассылкой и принимаю <a
+        class="modal-form-policy-link" href="">Условия договора</a> </label>
 
-    <input type="checkbox" name="user-policy" class="modal-form-checkbox"id="checkbox-policy" required>
-    <label for="checkbox-policy" class="modal-form-checkbox-policy">Соглашаюсь с рассылкой и принимаю <a class="modal-form-policy-link"
-        href="">Условия договора</a> </label>
+    
         <button type="submit" class="modal-form-btn">Отправить</button>
 </form>
 </div>
