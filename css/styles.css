@@ -197,15 +197,16 @@ body {
   align-items: center;
 }
 
-.contact-link:hover .icon-contacts,
-.contact-link:focus .icon-contacts {
-  fill: currentColor;
-}
-
 .icon-contacts {
   display: inline-block;
   margin-right: 10px;
   fill: var(--icons-color);
+  transition: fill 250ms var(--cubic);
+}
+
+.contact-link:hover .icon-contacts,
+.contact-link:focus .icon-contacts {
+  fill: currentColor;
 }
 
 /*========================END==HEADER=======================*/
@@ -347,8 +348,8 @@ body {
   color: var(--main-color);
 }
 
-.modal-form-field:not(:first-child) {
-  margin-top: 10px;
+.modal-form-field {
+  margin-bottom: 10px;
 }
 .modal-forma-input-wrapper {
   position: relative;
@@ -413,6 +414,9 @@ body {
 
 /* ====================КАСТОМНЫЙ ЧЕКБОКС================== */
 
+.modal-form-checkbox {
+  outline: none;
+}
 .modal-form-checkbox-policy::before {
   display: inline-block;
   vertical-align: middle;
@@ -627,22 +631,22 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition: background-color 250ms var(--cubic);
 }
 
 .social-icon {
   fill: var(--icons-color);
+  transition: fill 250ms var(--cubic);
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
-  transition: background-color 250ms var(--cubic);
 }
 
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
   fill: var(--primary-white-color);
-  transition: fill 250ms var(--cubic);
 }
 
 /*===================END==TEAM=================================*/
@@ -660,6 +664,7 @@ body {
   justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: border-color 250ms var(--cubic);
 }
 
 .client-link:hover,
@@ -667,16 +672,18 @@ body {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   outline: none;
-  transition: border 250ms var(--cubic);
+}
+
+.icon-client {
+  fill: var(--icons-color);
+  transition: fill 250ms var(--cubic);
 }
 
 .client-link:hover .icon-client,
 .client-link:focus .icon-client {
   fill: var(--accent-color);
 }
-.icon-client {
-  fill: var(--icons-color);
-}
+
 /*==================FOOTER=================*/
 .footer {
   padding-top: 60px;
