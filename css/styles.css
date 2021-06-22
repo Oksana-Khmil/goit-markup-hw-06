@@ -414,9 +414,9 @@ body {
 
 /* ====================КАСТОМНЫЙ ЧЕКБОКС================== */
 
-.modal-form-checkbox {
+/* .modal-form-checkbox {
   outline: none;
-}
+} */
 .modal-form-checkbox-policy::before {
   display: inline-block;
   vertical-align: middle;
@@ -449,9 +449,9 @@ body {
   color: var(--main-color);
 }
 
-.modal-form-checkbox:focus + .modal-form-checkbox-policy::before {
+.modal-form-checkbox:focus + .modal-form-checkbox-policy::before:focus {
   box-shadow: 0 0 0 2px var(--accent-color);
-  border-right: 2px;
+  border-radius: 2px;
 }
 
 /* ====================КНОПКА ОТПРАВИТЬ============================== */
